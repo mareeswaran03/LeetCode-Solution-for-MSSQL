@@ -1,0 +1,4 @@
+select W1.id from Weather W1 
+join Weather W2 
+on W1.recordDate= DATEADD(day,1,W2.recordDate)
+where W1.temperature>W2.temperature
